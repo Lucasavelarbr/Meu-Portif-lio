@@ -1,3 +1,4 @@
+
 const toggleMenu = document.getElementById("toggle-menu")
 const menu = document.querySelector(".menu-lateral")
 
