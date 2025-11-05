@@ -1,0 +1,144 @@
+:root {
+  --cor-background: #c9c9c9;
+  --color: #0D0D0D;
+  --tamanho-fonte-texto: 1rem;
+  --tamanho-fonte-título: 1.5rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./IMG/background.png);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+
+.menu-lateral{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    background-color: var(--cor-background);
+    padding: 10px;
+    transition: width .3s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 1px 5px 8px black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-lateral.open{
+    width: 200px;
+}
+
+/* Botão de abrir o menu */
+.menu-lateral .toggle{
+    background-color: transparent;
+    border: none;
+    color: #0D0D0D;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 15px;
+    z-index: 2;
+}
+
+.toggle:focus-visible{
+    outline: 2px solid #083C9E; 
+    outline-offset: 10px;
+    border-radius: 4px;
+}
+
+/* lista */
+.menu-lateral ul{
+    list-style-type: none;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* item */
+.menu-lateral ul li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.menu-lateral ul li a{
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+/* icones */
+.icon{
+    font-size: 1.5rem;
+}
+
+.menu-lateral ul li a:focus-visible {
+  outline: 2px solid #083C9E; 
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Inicialmente fechado */
+.menu-lateral .text{
+    opacity: 0;
+    transition: opacity .2s ease-in;
+}
+
+/* Mostrar o Texto suavemente */
+.menu-lateral.open .text{
+    opacity: 1;
+}
+
+.perfil img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    background-size: cover;
+    display: block;
+    margin: 5rem auto 0 auto;
+    padding-left: 75px;
+}
+
+.perfil h1 {
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+.perfil p{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.perfil span{
+    font-weight: bold;
+    color: #083C9E;
+}
+
+
