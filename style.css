@@ -21,6 +21,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    flex-direction: column;
     font-family: "Inter", sans-serif;
 }
 
@@ -140,6 +141,14 @@ body{
 .perfil span{
     font-weight: bold;
     color: #083C9E;
+}
+
+.sobre h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 80%;
+    margin-left: 80px;
 }
 
 
