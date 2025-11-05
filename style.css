@@ -30,7 +30,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 80px;
+    width: 60px;
     height: 100vh;
     background-color: var(--cor-background);
     padding: 10px;
@@ -72,7 +72,7 @@ body{
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 /* item */
@@ -141,6 +141,49 @@ body{
 .perfil span{
     font-weight: bold;
     color: #083C9E;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #0D0D0D;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-download i{
+    font-size: 1.2rem;
+}
+
+.github{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #0D0D0D;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.github i{
+    font-size: 1.2rem;
 }
 
 .sobre h2{
