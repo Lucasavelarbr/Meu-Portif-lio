@@ -1,30 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-     <!-- Icones-->
+    <!-- Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Portifólio - Lucas Brasil</title>
 </head>
+
 <body>
 
-<header>
-        <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral"><i class="bi bi-three-dots"></i></button>
-</header>
+    <header>
+        <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral"><i
+                class="bi bi-three-dots"></i></button>
+    </header>
 
     <!-- Sidebar -->
-<nav class="menu-lateral">
+    <nav class="menu-lateral">
         <ul>
             <li>
                 <a href="#" class="menu-link" aria-label="">
@@ -33,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="menu-link" aria-label="Abrir menu">
+                <a href="#sobre-mim" class="menu-link" aria-label="Abrir menu">
                     <i class="bi bi-person-bounding-box"></i>
                     <span>Sobre mim</span>
                 </a>
@@ -51,35 +55,90 @@
                 </a>
             </li>
         </ul>
-</nav>  
+    </nav>
 
-<main>
-    <section class="perfil">
-     <img src="./IMG/perfil.webp" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
+
+    <main>
+        <section class="perfil">
+            <img src="./IMG/perfil.webp" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
      e olhando para a câmera de forma descontraída" loading="lazy">
-     <h1>Lucas Avelar Brasil</h1>
-     <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
-    </section>
+            <h1>Lucas Avelar Brasil</h1>
+            <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
+        </section>
 
-    <section class="contato">
-        <a href="./docs/Curriculo_Lucas_Avelar_Compat.pdf" download="Lucas Avelar Brasil-Curriculo.pdf" class="btn-download">
-            <i class="bi bi-file-earmark-arrow-down"></i> Baixar currículo
-        </a>
+        <section class="sobrenome">
+            <h2>Sim, meu sobrenome é Brasil! <br> <span>Nem eu consegui debugar essa coincidência ainda!😂</span></h2>
+            <p>
 
-        <a href="https://github.com/Lucasavelarbr" class="github" target="_blank" rel="noopener noreferrer">
-            <i class="bi bi-github"></i>
-            Github
-        </a>
-    </section>
-    
-    <section class="sobre">
-        <h2>Sim, meu sobrenome é Brasil! <br> <span>Nem eu consegui debugar essa coincidência ainda!😂</span></h2>
-        <p>
+            </p>
+        </section>
 
-        </p>
-    </section>
-</main>
+        <section class="contato">
+            <a href="./docs/Curriculo_Lucas_Avelar_Compat.pdf" download="Lucas Avelar Brasil-Curriculo.pdf"
+                class="btn-download">
+                <i class="bi bi-file-earmark-arrow-down"></i> Baixar currículo
+            </a>
 
-<script src="script.js" defer></script>
+            <a href="https://github.com/Lucasavelarbr" class="github" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-github"></i>
+                Github
+            </a>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <h3>Sobre mim!</h3>
+            <p>
+                Sou estudante de Análise e Desenvolvimento de Sistemas e estou em transição de carreira para o
+                Desenvolvimento de Software. <br> <br>
+                Depois de mais de dez anos nas áreas jurídica e administrativa, encontrei no Front-End uma forma de unir
+                lógica, design e propósito. <br> <br>
+                Atualmente, me qualifico para atuar como especialista em Acessibilidade Digital (WCAG), área pela qual
+                desenvolvi um forte interesse após vivenciar na prática os desafios de navegação como pessoa com
+                deficiência visual (CID H54.2). <br><br>
+                Trabalho com HTML, CSS, JavaScript e React, com foco em criar interfaces acessíveis, funcionais e
+                voltadas à experiência real do usuário.
+            </p>
+        </section>
+
+        <section class="projetos-container">
+
+            <h2>Meus Projetos</h2>
+
+            <figure class="projeto">
+                <img src="/IMG/Jaque-Tarot.png.png" alt="Versão mobile do site Jaque Moraes Tarot, criada para o meu portfólio.">
+                <figcaption>
+                    <a href="https://lucasavelarbr.github.io/Jaque-Tarot/" class="btn-projeto" aria-label="Ver rojeto de Jaque Tarot">
+                        <i class="bi bi-sign-turn-right"></i>
+                        <span>Ver projeto</span>
+                    </a>
+                </figcaption>
+            </figure>
+
+                <figure class="projeto">
+                <img src="/IMG/Turismo_Avelar.png.png" alt="Versão mobile do site Avelar Turismo, criada para o meu portfólio.">
+                <figcaption>
+                    <a href="https://lucasavelarbr.github.io/Avelar-Turismo/" class="btn-projeto" aria-label="Versão mobile do site Avelar Turismo, criada para o meu portfólio.">
+                        <i class="bi bi-sign-turn-right"></i>
+                        <span>Ver projeto</span>
+                    </a>
+                </figcaption>
+            </figure>
+
+                <figure class="projeto">
+                <img src="/IMG/Caio_Araújo.png.png" alt="Clonagem do site Caio Araújo desenvolvida como exercício de front-end.">
+                <figcaption>
+                    <a href="https://lucasavelarbr.github.io/Caio-Araujo/" class="btn-projeto" aria-label="Ver projeto Caio Araújo">
+                        <i class="bi bi-sign-turn-right"></i>
+                        <span>Ver projeto</span>
+                    </a>
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+    </main>
+
+    <script src="script.js" defer></script>
 
 </body>
