@@ -18,32 +18,45 @@
     <title>Portifólio - Lucas Brasil</title>
 </head>
 <body>
-    <!-- Sidebar -->
-     <nav class="menu-lateral">
-        <button class="toggle" id="toggle-menu"><i class="bi bi-three-dots"></i></button>
 
+<header>
+        <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral"><i class="bi bi-three-dots"></i></button>
+</header>
+
+    <!-- Sidebar -->
+<nav class="menu-lateral">
         <ul>
-            <li class="active">
-                <span class="icon"><i class="bi bi-house-fill"></i></span>
-                <a href="#" class="text">Início</a>
+            <li>
+                <a href="#" class="menu-link" aria-label="">
+                    <i class="bi bi-house-fill"></i>
+                    <span>Início</span>
+                </a>
             </li>
-            <li class="active">
-                <span class="icon"><i class="bi bi-person-bounding-box"></i></span>
-                <a href="#" class="text">Sobre mim</a>
+            <li>
+                <a href="#" class="menu-link" aria-label="Abrir menu">
+                    <i class="bi bi-person-bounding-box"></i>
+                    <span>Sobre mim</span>
+                </a>
             </li>
-            <li class="active">
-                <span class="icon"><i class="bi bi-cpu"></i></span>
-                <a href="#" class="text">Tecnologias</a>
+            <li>
+                <a href="#" class="menu-link" aria-label="Abrir menu">
+                    <i class="bi bi-cpu"></i>
+                    <span>Tecnologias</span>
+                </a>
             </li>
-            <li class="active">
-                <span class="icon"><i class="bi bi-cast"></i></span>
-                <a href="#" class="text">Projetos</a>
+            <li>
+                <a href="#" class="menu-link">
+                    <i class="bi bi-cast"></i>
+                    <span>Projetos</span>
+                </a>
             </li>
         </ul>
-     </nav>  
+</nav>  
 
+<main>
     <section class="perfil">
-     <img src="./IMG/perfil.png" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo e olhando para a câmera de forma descontraída">
+     <img src="./IMG/perfil.webp" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
+     e olhando para a câmera de forma descontraída" loading="lazy">
      <h1>Lucas Avelar Brasil</h1>
      <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
     </section>
@@ -60,13 +73,13 @@
     </section>
     
     <section class="sobre">
-        <h2>Sim, meu sobrenome é Brasil <span>Nem eu consegui debugar essa coincidência ainda</span></h2>
+        <h2>Sim, meu sobrenome é Brasil! <br> <span>Nem eu consegui debugar essa coincidência ainda!😂</span></h2>
         <p>
 
         </p>
     </section>
+</main>
 
-
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 </body>
