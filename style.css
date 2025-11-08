@@ -164,7 +164,7 @@ body{
     font-weight: bold;
     text-decoration: none;
     margin-top: 50px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -188,7 +188,7 @@ body{
     font-weight: bold;
     text-decoration: none;
     margin-top: 50px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -246,9 +246,43 @@ body{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 30px;
-    border-top: 1px solid var(--color);
-    padding-top: 3rem;
 }
+
+.tecnologias-container h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tecnologias-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin: auto;
+    max-width: 90%;
+    padding: 100px;
+}
+
+.tecnologias-grid figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.tecnologias-grid img{
+    width: 100px;
+    height: 100px;
+}
+
+.tecnologias-grid figcaption{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 .projeto img{
     height: auto;
@@ -260,19 +294,26 @@ figcaption{
     padding: 2rem;
 }
 
+.projeto figcaption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
 .btn-projeto{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .2rem;
-    background-color: var(--cor-background);
-    box-shadow: 0 0 10px var(--color);
-    font-size: 1.3rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: var(--color);
     text-decoration: none;
     padding: 0.8rem;
     cursor: pointer;
-    border-radius: 15px;
 }
 
 .btn-projeto:focus{
