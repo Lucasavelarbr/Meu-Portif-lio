@@ -60,9 +60,10 @@ body{
     top: 10px;
     left: 20px;
     z-index: 3;
-    background-color: transparent;
+    background-color: var(--cor-background);
     color: #062B6F;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5px var(--color);
     font-weight: 900;
     border: none;
     cursor: pointer;
@@ -121,6 +122,33 @@ body{
     font-size: 1.5rem;
 }
 
+/* Links das redes sociais */
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.redes-sociais i{
+    background-color: transparent;
+    color: #062B6F;
+    cursor: pointer;
+}
+
+.redes-sociais a:focus-visible{
+    outline: 3px solid #062B6F; 
+    outline-offset: 10px;
+    border-radius: 4px;
+}
+
+.redes-sociais a:focus{
+    outline: 3px solid #062B6F; 
+    outline-offset: 10px;
+    border-radius: 4px;
+}
+
+/* Meu perfil */
 .perfil img{
     height: 15rem;
     width: 15rem;
@@ -231,24 +259,11 @@ body{
     font-weight: bold;
 }
 
-#sobre-mim{
+#sobre-mim, #tecnologias, #projetos{
     scroll-margin-top: 70px;
 }
 
-.projetos-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    align-items: start;
-}
-
-.projetos-container h2{
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* Tecnologias */
 .tecnologias-container h2{
     font-size: 2rem;
     text-align: center;
@@ -284,6 +299,27 @@ body{
     font-weight: bold;
 }
 
+/* Projetos */
+
+.projetos h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.projetos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    align-items: start;
+}
+
+.projetos-container h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 .projeto img{
     aspect-ratio: 16 / 9;

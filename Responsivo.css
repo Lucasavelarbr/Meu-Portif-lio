@@ -1,0 +1,20 @@
+@media screen and (min-width: 650px){
+    .redes-sociais{
+        margin-top: 100px;
+    }
+
+    .projetos-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        justify-content: center;
+        gap: 50px;
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    .menu-lateral{
+        width: 30%;
+        height: 100vh;
+}
+}
