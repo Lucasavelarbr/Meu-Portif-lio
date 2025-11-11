@@ -24,3 +24,9 @@ document.addEventListener("keydown", (e) =>{
     } 
 })
 
+document.querySelectorAll("a").forEach(link =>{
+    link.addEventListener("click", () =>{
+        menu.classList.remove("open")
+    })
+})
+

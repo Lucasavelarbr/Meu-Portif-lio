@@ -62,7 +62,8 @@ body{
     z-index: 3;
     background-color: transparent;
     color: #062B6F;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 900;
     border: none;
     cursor: pointer;
     padding: 8px 6px;
@@ -285,9 +286,20 @@ body{
 
 
 .projeto img{
-    height: auto;
+    aspect-ratio: 16 / 9;
     width: 100%;
     display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.projeto > p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    flex-grow: 1;
 }
 
 figcaption{
@@ -314,6 +326,7 @@ figcaption{
     text-decoration: none;
     padding: 0.8rem;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 .btn-projeto:focus{
