@@ -315,6 +315,7 @@ body{
     gap: 2rem;
     padding: 2rem;
     align-items: start;
+    max-width: 80%;
 }
 
 .projetos-container h2{
@@ -325,8 +326,9 @@ body{
 
 .projeto img{
     aspect-ratio: 16 / 9;
-    width: 100%;
+    width: 90%;
     display: block;
+    margin: 0 AUTO;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
@@ -377,3 +379,17 @@ figcaption{
     border-radius: 4px;
 }
 
+.copy-container{
+    width: 100%;
+    height: 65px;
+    background-color: #0d0d0df1;
+    color: #ffff;
+}
+
+.copy{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    padding: 20px;
+}

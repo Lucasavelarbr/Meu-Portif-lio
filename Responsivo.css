@@ -6,7 +6,7 @@
     .projetos-container{
         display: grid;
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 70%;
         justify-content: center;
         gap: 50px;
         padding: 40px;
