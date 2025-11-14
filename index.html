@@ -23,11 +23,13 @@
 
 <body>
 
+     <div class="overlay"></div>
+
     <header>
         <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral">Menu</button>
     </header>
 
-    <!-- Sidebar -->
+    <!-- Sidebar mobile-->
     <nav class="menu-lateral">
         <ul>
             <li>
@@ -60,8 +62,24 @@
             <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
             <a href="https://wa.me/+5511965765805" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
+        
     </nav>
 
+    <!-- Menu Desktop -->
+
+    <nav class="menu-desktop">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+
+        <div class="redes-sociais-desktop">
+            <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/5511965765805" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </nav>
 
     <main>
         <section class="perfil">
@@ -109,7 +127,7 @@
 
             <h2>Tecnologias</h2>
 
-            <div class="tecnologias-grid">
+            <div class="tecnologias-grid" id="tecnologia-imagens">
                 <figure>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                         alt="Logotipo da tecnologia HTML5">
@@ -129,7 +147,7 @@
                 </figure>
 
                 <figure>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    <img src="IMG/react.png"
                         alt="Logotipo da tecnologia React">
                     <figcaption>React</figcaption>
                 </figure>

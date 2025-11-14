@@ -28,7 +28,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Inter", sans-serif;
+     background-blend-mode: overlay;
 }
+
 
 
 .menu-lateral{
@@ -60,8 +62,8 @@ body{
     top: 10px;
     left: 20px;
     z-index: 3;
-    background-color: var(--cor-background);
-    color: #062B6F;
+    background-color: #0d0d0df1;
+    color: #ffff;
     font-size: 1.5rem;
     box-shadow: 0 0 5px var(--color);
     font-weight: 900;
@@ -132,7 +134,7 @@ body{
 
 .redes-sociais i{
     background-color: transparent;
-    color: #062B6F;
+    color: #0d0d0df1;
     cursor: pointer;
 }
 
@@ -255,7 +257,7 @@ body{
 
 .sobre-mim h3{
     font-size: 1.8rem;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     font-weight: bold;
 }
 
@@ -277,7 +279,7 @@ body{
     justify-content: center;
     gap: .5rem;
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
     padding: 100px;
 }
 

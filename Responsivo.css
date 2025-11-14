@@ -1,6 +1,6 @@
-@media screen and (min-width: 650px){
+@media screen and (max-width: 780px){
     .redes-sociais{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .projetos-container{
@@ -16,5 +16,122 @@
     .menu-lateral{
         width: 30%;
         height: 100vh;
+    }
+
 }
+
+@media  screen and (max-width: 780px){
+    .menu-desktop{
+        display: none;
+    }
 }
+
+
+@media  screen and (min-width: 780px) {
+    .menu-toggle{
+        display: none;
+    }
+
+    .menu-lateral{
+        display: none;
+    }
+
+    /* Navbar - Desktop */
+    .menu-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: #0d0d0df1;
+        width: 100%;
+        height: 60px;
+    }
+
+    .menu-desktop ul{
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        margin: 0 5%;
+    }
+
+    .menu-desktop ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .menu-desktop ul li a:focus-visible{
+        outline: 3px solid #062B6F; 
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    .menu-desktop ul li a:focus{
+    outline: 3px solid #062B6F; 
+    outline-offset: 10px;
+    border-radius: 4px;
+    }
+
+    /* Icones de Linkedin e Whatsapp - Desktop */
+    .redes-sociais-desktop{
+        gap: 30px;
+        display: flex;
+        margin-right: 5%;
+    }
+
+    .redes-sociais-desktop i{
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .redes-sociais-desktop a:focus-visible{
+        outline: 3px solid #062B6F; 
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    .redes-sociais-desktop a:focus{
+        outline: 3px solid #062B6F; 
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    #sobre-mim, #tecnologias, #projetos{
+    scroll-margin-top: 7rem;
+    }
+
+    .sobre-mim{
+        max-width: 70%;
+    }
+
+    /* Tecnologias */
+    #tecnologia-imagens{
+        display: flex;
+        gap: 50px;
+    }
+
+    .projetos-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        justify-content: center;
+        gap: 50px;
+        padding: 40px;
+        margin: 0 auto;
+    }
+ }
+
+ @media  screen and (min-width: 1200px) {
+    .projetos-container{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .projeto > p{
+        text-align: left;
+    }
+ }
