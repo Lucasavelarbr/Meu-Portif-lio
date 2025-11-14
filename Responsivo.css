@@ -14,7 +14,7 @@
     }
 
     .menu-lateral{
-        width: 30%;
+        width: 50%;
         height: 100vh;
     }
 
@@ -125,7 +125,7 @@
     }
  }
 
- @media  screen and (min-width: 1200px) {
+ @media  screen and (min-width: 1000px) {
     .projetos-container{
         display: flex;
         gap: 2.5rem;
