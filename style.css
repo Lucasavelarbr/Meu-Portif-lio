@@ -150,6 +150,15 @@ body{
     border-radius: 4px;
 }
 
+.logo-mobile img{
+    width: 5rem;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
 /* Meu perfil */
 .perfil img{
     height: 15rem;
@@ -388,7 +397,7 @@ figcaption{
 
 .copy{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 3rem;
     padding: 20px;

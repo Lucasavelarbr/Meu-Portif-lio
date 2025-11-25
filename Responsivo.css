@@ -50,6 +50,11 @@
         height: 60px;
     }
 
+    .logo-desktop{
+        height: 6rem;
+        margin-top: 5px;
+    }
+
     .menu-desktop ul{
         list-style-type: none;
         display: flex;
@@ -122,6 +127,10 @@
         gap: 50px;
         padding: 40px;
         margin: 0 auto;
+    }
+
+    .copy{
+        font-size: 1.2rem;
     }
  }
 
