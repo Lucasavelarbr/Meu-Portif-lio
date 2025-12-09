@@ -19,7 +19,7 @@ document.addEventListener("click", (e) => {
 })
 
 document.addEventListener("keydown", (e) =>{
-    if (e.key === "Escape"){
+    if (e.key === "Escape" || e.key === "Space"){
         menu.classList.remove("open")
     } 
 })

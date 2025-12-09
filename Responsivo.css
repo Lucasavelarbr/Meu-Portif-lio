@@ -36,6 +36,10 @@
         display: none;
     }
 
+    .logo-mobile img{
+        display: none;
+    }
+
     /* Navbar - Desktop */
     .menu-desktop{
         display: flex;
