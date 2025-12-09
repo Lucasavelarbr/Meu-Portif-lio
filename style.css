@@ -2,6 +2,7 @@
 :root {
   --cor-background: #c9c9c9;
   --color: #0D0D0D;
+  --cor-borda: #062B6F;
   --tamanho-fonte-texto: 1rem;
   --tamanho-fonte-título: 1.5rem;
 }
@@ -34,7 +35,7 @@ body{
 
 
 .menu-lateral{
-  background-color: var(--cor-background);
+    background-color: var(--cor-background);
     color: #0D0D0D;
     font-size: 1.8rem;
     position: fixed;
@@ -52,7 +53,6 @@ body{
 
 .menu-lateral.open{
     transform: translateX(0);
-
 } 
 
 /* Botão do menu */
@@ -62,14 +62,14 @@ body{
     top: 10px;
     left: 20px;
     z-index: 3;
-    background-color: #0d0d0df1;
-    color: #ffff;
+    background-color: var(--cor-borda);
+    color: var(--cor-background);
     font-size: 1.5rem;
     box-shadow: 0 0 5px var(--color);
     font-weight: 900;
     border: none;
     cursor: pointer;
-    padding: 8px 6px;
+    padding: 8px 16px;
     border-radius: 5px;
 }
 
@@ -154,32 +154,34 @@ body{
     width: 5rem;
     height: auto;
     display: block;
-    position: absolute;
+    position: fixed;
     right: 10px;
-    top: 0;
+    top: 0; 
 }
 
 /* Meu perfil */
 .perfil img{
     height: 15rem;
-    width: 15rem;
+    width: auto;
     object-fit: cover;
     background-size: cover;
     display: flex;
     margin: auto;
     margin-top: 80px;
     border-radius: 50%;
+    box-shadow: 0 0 40px -20px var(--color);
 }
 
 .perfil h1 {
     text-align: center;
     padding-top: 30px;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
 }
 
 .perfil p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
+    margin-top: 20px;
 }
 
 .perfil span{
@@ -194,18 +196,19 @@ body{
     gap: 30px;
 }
 
-.btn-download{
+.btn-base{
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-    background-color: transparent;
-    color: #0D0D0D;
-    font-weight: bold;
+    align-items: center;
     text-decoration: none;
-    margin-top: 50px;
+    color: #0D0D0D;
     font-size: 1.3rem;
-    cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn-base i{
+    margin-right: 10px;
+    font-size: 1.5rem;
 }
 
 .btn-download:focus-visible{
@@ -214,26 +217,20 @@ body{
     border-radius: 4px;
 }
 
-.btn-download i{
-    font-size: 1.2rem;
+
+.btn-download{
+    background-color: var(--cor-borda);
+    color: var(--cor-background);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .github{
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
     background-color: transparent;
-    color: #0D0D0D;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 50px;
-    font-size: 1.3rem;
-    cursor: pointer;
-}
-
-.github i{
-    font-size: 1.2rem;
+    color: #062B6F;
+    border: 2px solid var(--cor-borda) ;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .github:focus{
@@ -242,12 +239,14 @@ body{
     border-radius: 4px;
 }
 
-.sobrenome h2{
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 1rem;
-    max-width: 80%;
+.sobrenome img {
+    width: 80%;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
     margin: 20px auto;
+    border-radius: 10px;
 }
 
 .sobre-mim{
@@ -257,7 +256,7 @@ body{
     flex-direction: column;
     margin: 130px auto;
     text-align: left;
-    box-shadow: 0px 0px 10px var(--color);
+    box-shadow: 0px 0px 40px -15px var(--color);
     border-radius: 10px;
     padding: 5%;
     font-size: 1.2rem;
@@ -296,13 +295,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     text-align: center;
 }
 
 .tecnologias-grid img{
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 
 .tecnologias-grid figcaption{
@@ -311,6 +310,11 @@ body{
 }
 
 /* Projetos */
+
+#projetos{
+    max-width: 80%;
+    margin: 0 auto;
+}
 
 .projetos h2{
     text-align: center;
@@ -335,20 +339,28 @@ body{
 
 .projeto img{
     aspect-ratio: 16 / 9;
-    width: 90%;
+    width: 100%;
+    max-width: 80%;
+    height: auto  ;
     display: block;
-    margin: 0 AUTO;
-    object-fit: cover;
+    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
 }
 
+.projeto h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
 .projeto > p{
-    margin-top: 30px;
     text-align: center;
     font-size: 1rem;
-    font-weight: bold;
     flex-grow: 1;
+    max-width: 80%;
+    display: block;
+    margin: 30px auto 10px;
 }
 
 figcaption{
@@ -367,15 +379,36 @@ figcaption{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .2rem;
-    background-color: transparent;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--color);
+    background-color: var(--cor-borda);
+    color: var(--cor-background);
+    font-size: 1.5rem;
     text-decoration: none;
-    padding: 0.8rem;
+    padding: 10px 20px;
     cursor: pointer;
-    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.btn-projeto i{
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+
+.btn-repositorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid var(--cor-borda);
+    color: var(--cor-borda);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-repositorio i{
+    font-size: 1.2rem;
+    margin-right: 10px;
 }
 
 .btn-projeto:focus{

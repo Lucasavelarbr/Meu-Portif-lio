@@ -105,6 +105,39 @@
         border-radius: 4px;
     }
 
+    .perfil{
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .conteudo-perfil{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+
+    .perfil img{
+        flex: 0 0 auto;
+        margin: 100px 0 100px 100px;
+        height: auto;
+        width: 300px;
+    }
+
+    .perfil h1{
+        font-size: 3rem;
+        text-align: left;
+        padding: 0;
+    }
+
+    .texto p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
     #sobre-mim, #tecnologias, #projetos{
     scroll-margin-top: 7rem;
     }
@@ -127,6 +160,7 @@
         gap: 50px;
         padding: 40px;
         margin: 0 auto;
+        min-height: 500px;
     }
 
     .copy{
@@ -135,6 +169,8 @@
  }
 
  @media  screen and (min-width: 1000px) {
+    
+    
     .projetos-container{
         display: flex;
         gap: 2.5rem;

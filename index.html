@@ -29,14 +29,14 @@
 
 <body>
 
-     <div class="overlay"></div>
+    <div class="overlay"></div>
 
     <header>
         <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral">Menu</button>
     </header>
 
     <!-- Sidebar mobile-->
-    <nav class="menu-lateral">
+    <nav class="menu-lateral" id="menu-lateral">
         <ul>
             <li>
                 <a href="#" class="menu-link" aria-label="">
@@ -65,18 +65,20 @@
         </ul>
 
         <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"><i class="bi bi-linkedin"></i></a>
             <a href="https://wa.me/+5511965765805" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
-        
+
     </nav>
 
     <!-- Menu Desktop -->
 
     <nav class="menu-desktop">
-        
-        <img src="IMG/logo-desktop.png" class="logo-desktop" alt="Logo escrito Lucas Avelar Brasil, sendo o Brasil escrito em verde e uma bandeira do país ao lado direto da imagem, referenciando meu sobrenome">
-        
+
+        <img src="IMG/logo-desktop.png" class="logo-desktop"
+            alt="Logo escrito Lucas Avelar Brasil, sendo o Brasil escrito em verde e uma bandeira do país ao lado direto da imagem, referenciando meu sobrenome">
+
         <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#sobre-mim">Sobre mim</a></li>
@@ -85,40 +87,39 @@
         </ul>
 
         <div class="redes-sociais-desktop">
-            <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
             <a href="https://wa.me/5511965765805" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
     </nav>
 
     <main>
         <section class="logo-mobile">
-            <img src="IMG/logo.png" alt="Logo escrito Lucas Avelar Brasil, sendo o Brasil escrito em verde e uma bandeira do país ao lado direto da imagem, referenciando meu sobrenome">
+            <img src="IMG/logo.png"
+                alt="Logo escrito Lucas Avelar Brasil, sendo o Brasil escrito em verde e uma bandeira do país ao lado direto da imagem, referenciando meu sobrenome">
         </section>
 
         <section class="perfil">
             <img src="./IMG/perfil.webp" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
-     e olhando para a câmera de forma descontraída" loading="lazy">
-            <h1>Lucas Avelar Brasil</h1>
-            <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
-        </section>
+                e olhando para a câmera de forma descontraída" loading="lazy">
+            <div class="conteudo-perfil">
+                <div class="texto">
+                    <h1>Lucas Avelar Brasil</h1>
+                    <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
+                </div>
 
-        <section class="sobrenome">
-            <h2><strong>if (sobrenome === "Brasil") <br> return orgulho;</strong></h2>
-            <p>
+                <div class="contato">
+                    <a href="./docs/Curriculo_Lucas_Avelar_Compat.pdf" download="Lucas Avelar Brasil-Curriculo.pdf"
+                        class="btn-download btn-base">
+                        <i class="bi bi-file-earmark-arrow-down"></i> Baixar currículo
+                    </a>
 
-            </p>
-        </section>
-
-        <section class="contato">
-            <a href="./docs/Curriculo_Lucas_Avelar_Compat.pdf" download="Lucas Avelar Brasil-Curriculo.pdf"
-                class="btn-download">
-                <i class="bi bi-file-earmark-arrow-down"></i> Baixar currículo
-            </a>
-
-            <a href="https://github.com/Lucasavelarbr" class="github" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-github"></i>
-                Github
-            </a>
+                    <a href="https://github.com/Lucasavelarbr" class="github btn-base" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>Github
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section class="sobre-mim" id="sobre-mim">
@@ -160,8 +161,7 @@
                 </figure>
 
                 <figure>
-                    <img src="IMG/react.png"
-                        alt="Logotipo da tecnologia React">
+                    <img src="IMG/react.png" alt="Logotipo da tecnologia React">
                     <figcaption>React</figcaption>
                 </figure>
             </div>
@@ -176,9 +176,10 @@
                 <figure class="projeto">
                     <img src="IMG/jaque-tarot.png"
                         alt="Versão mobile do site Jaque Moraes Tarot, criada para o meu portfólio.">
+                    <h3>Jaqueline Tarot</h3>
                     <p>
-                        Criei este site para minha namorada, Jaque Moraes, taróloga, modernizando seu antigo site e
-                        trazendo uma identidade visual mais leve, intuitiva e acessível.
+                        Desenvolvi este site para a taróloga Jaque Moraes, com o objetivo de modernizar sua presença
+                        digital e apresentar uma identidade visual mais leve, intuitiva e acessível utilizando WCAG
                     </p>
                     <figcaption>
                         <a href="https://lucasavelarbr.github.io/Jaque-Tarot/" class="btn-projeto"
@@ -187,7 +188,7 @@
                             <span>Projeto</span>
                         </a>
 
-                        <a href="https://github.com/Lucasavelarbr/Jaque-Tarot" class="btn-projeto"
+                        <a href="https://github.com/Lucasavelarbr/Jaque-Tarot" class="btn-repositorio"
                             aria-label="Ver repositório de Jaque Tarot" target="_blank">
                             <i class="bi bi-git"></i>
                             <span> Repositório</span>
@@ -198,9 +199,10 @@
                 <figure class="projeto">
                     <img src="IMG/avelar-turismo.png"
                         alt="Versão mobile do site Avelar Turismo, criada para o meu portfólio.">
+                    <h3>Lucas Avelar - Turismo</h3>
                     <p>
-                        Projeto acadêmico desenvolvido com HTML, CSS e JavaScript para a conclusão do semestre
-                        universitário, com foco em design responsivo e boas práticas de front-end.
+                        Projeto acadêmico desenvolvido com HTML, CSS e JavaScript para avaliação semestral, aplicando
+                        princípios de design responsivo, acessibilidade e boas práticas de desenvolvimento front-end.
                     </p>
                     <figcaption>
                         <a href="https://lucasavelarbr.github.io/Turismo-Avelar/" class="btn-projeto"
@@ -210,7 +212,7 @@
                             <span>Projeto</span>
                         </a>
 
-                        <a href="https://github.com/Lucasavelarbr/Turismo-Avelar" class="btn-projeto"
+                        <a href="https://github.com/Lucasavelarbr/Turismo-Avelar" class="btn-repositorio"
                             aria-label="Ver repositório de Lucas Avelar Turismo" target="_blank">
                             <i class="bi bi-git"></i>
                             <span> Repositorio </span>
@@ -220,6 +222,7 @@
                 <figure class="projeto">
                     <img src="IMG/caio-araujo.png"
                         alt="Clonagem do site Caio Araújo desenvolvida como exercício de front-end.">
+                    <h3>Caio Araújo - Advogado</h3>
                     <p>
                         Desenvolvi este site para o advogado Caio Araújo, modernizando sua antiga página e aplicando um
                         design mais limpo, responsivo e alinhado à sua identidade profissional.
@@ -231,7 +234,7 @@
                             <span>Projeto</span>
                         </a>
 
-                        <a href="hhttps://github.com/Lucasavelarbr/Caio-Araujo-Advogado" class="btn-projeto"
+                        <a href="hhttps://github.com/Lucasavelarbr/Caio-Araujo-Advogado" class="btn-repositorio"
                             aria-label="Ver Repositório de Caio Araujo Advogado " target="_blank">
                             <i class="bi bi-git"></i>
                             <span> Repositório</span>
@@ -245,7 +248,7 @@
     <footer>
         <div class="copy-container">
             <p class="copy">© 2025 — Lucas Avelar Brasil</p>
-        </div>    
+        </div>
     </footer>
     <script src="script.js" defer></script>
 

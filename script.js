@@ -1,6 +1,6 @@
 
 const toggleMenu = document.getElementById("toggle-menu")
-const menu = document.querySelector(".menu-lateral")
+const menu = document.getElementById("menu-lateral")
 
 toggleMenu.addEventListener("click", () =>{
     
