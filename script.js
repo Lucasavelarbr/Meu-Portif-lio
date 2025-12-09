@@ -10,13 +10,15 @@ toggleMenu.addEventListener("click", () =>{
 // Fecha o menu ao clicar fora 
 
 document.addEventListener("click", (e) => {
-    const ClicksideMenu = menu.contains(e.target)
-    const ClickButton = toggleMenu.contains(e.target)
+    const ClickFora = menu.contains(e.target)
+    const ClickBotao = toggleMenu.contains(e.target)
 
-    if (!ClicksideMenu && !ClickButton) {
+    if (!ClickFora && !ClickBotao) {
         menu.classList.remove("open")
     } 
 })
+
+// Fecha ao apertar Espaço ou Esc
 
 document.addEventListener("keydown", (e) =>{
     if (e.key === "Escape" || e.key === "Space"){
@@ -24,6 +26,7 @@ document.addEventListener("keydown", (e) =>{
     } 
 })
 
+// Fecha ao clicar em um link do menu
 document.querySelectorAll("a").forEach(link =>{
     link.addEventListener("click", () =>{
         menu.classList.remove("open")
