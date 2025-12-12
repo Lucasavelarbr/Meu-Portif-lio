@@ -175,11 +175,11 @@
  @media  screen and (min-width: 1000px) {
     
     .contato{
-        display: flex;
-        justify-content: space-around;
-        align-items: end;
+        position: absolute;
+        top: 330px;
+        left: 435px;
     }
-
+    
     .projetos-container{
         display: flex;
         gap: 2.5rem;
