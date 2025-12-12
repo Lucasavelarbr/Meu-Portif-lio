@@ -23,7 +23,6 @@ html{
 body{
     background-color: #d9d9da;
     font-family: "Inter", sans-serif;
-    overflow-x: hidden;
 }
 
 
@@ -163,7 +162,7 @@ body{
 }
 
 .perfil p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 20px;
 }
@@ -178,7 +177,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: 30px;
-    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -188,12 +186,12 @@ body{
     align-items: center;
     text-decoration: none;
     color: #0D0D0D;
-    font-size: 1rem;
+    font-size: 1m;
     margin-top: 50px;
 }
 
 .btn-base i{
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 1.2rem;
 }
 
@@ -352,7 +350,7 @@ figcaption{
     justify-content: center;
     background-color: var(--cor-borda);
     color: var(--cor-background);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -370,7 +368,7 @@ figcaption{
     justify-content: center;
     background-color: transparent;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: 2px solid var(--cor-borda);
     color: var(--cor-borda);
     padding: 10px;
