@@ -154,7 +154,7 @@ body{
     width: 5rem;
     height: auto;
     display: block;
-    position: fixed;
+    position: absolute;
     right: 10px;
     top: 0; 
 }
