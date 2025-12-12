@@ -150,15 +150,6 @@ body{
     border-radius: 4px;
 }
 
-.logo-mobile img{
-    width: 5rem;
-    height: auto;
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 0; 
-}
-
 /* Meu perfil */
 .perfil img{
     height: 15rem;
