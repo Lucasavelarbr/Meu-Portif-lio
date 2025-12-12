@@ -21,14 +21,8 @@ html{
 }
 
 body{
-    background-image: url(./IMG/background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: cover;
+    background-color: #d9d9da;
     font-family: "Inter", sans-serif;
-    background-blend-mode: overlay;
     overflow-x: hidden;
 }
 
