@@ -183,9 +183,16 @@
     .projetos-container{
         display: flex;
         gap: 2.5rem;
+        
+    }
+
+    .projeto{
+        display: flex;
+        flex-direction: column;
     }
 
     .projeto > p{
-        text-align: left;
+        text-align: center;
     }
- }
+
+}   
