@@ -132,14 +132,15 @@
     .perfil h1{
         font-size: 3rem;
         text-align: left;
+        margin-left: 50px;
         padding: 0;
     }
 
     .texto p {
         font-size: 1.2rem;
         text-align: left;
-        margin-right: 30px;
         margin-top: 20px;
+        margin-left: 50px;
     }
 
     #sobre-mim, #tecnologias, #projetos{
@@ -174,10 +175,15 @@
 
  @media  screen and (min-width: 1000px) {
     
+
+
     .contato{
-        position: absolute;
-        top: 330px;
-        left: 435px;
+        display: flex;
+        gap: 1rem;
+        width: max-content; 
+        margin-left: 45px;     
+        justify-content: flex-start;
+        
     }
     
     .projetos-container{
