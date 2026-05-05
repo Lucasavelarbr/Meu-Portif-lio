@@ -1,35 +1,62 @@
+const menuToggle = document.getElementById('menu-toggle');
+const navList = document.getElementById('nav-list')
+const overlay = document.getElementById("overlay")
 
-const toggleMenu = document.getElementById("toggle-menu")
-const menu = document.getElementById("menu-lateral")
+const openMenu = () =>{
+    navList.classList.add("active")
+    menuToggle.classList.add("active")
+    overlay.classList.add("active")
+    navList.removeAttribute("hidden")
+    navList.removeAttribute("inert")
+    menuToggle.setAttribute("aria-expanded", "true")
+}
 
-toggleMenu.addEventListener("click", () =>{
-    
-    menu.classList.toggle("open");
-});
+const closeMenu = () =>{
+    navList.classList.remove("active")
+    menuToggle.classList.remove("active")
+    overlay.classList.remove("active")
+    navList.setAttribute("hidden")
+    navList.setAttribute("inert")
+    menuToggle.setAttribute("aria-expanded", "true")
+}
 
-// Fecha o menu ao clicar fora 
+// click do botão Menu
 
-document.addEventListener("click", (e) => {
-    const ClickFora = menu.contains(e.target)
-    const ClickBotao = toggleMenu.contains(e.target)
+menuToggle.addEventListener("click", (e) =>{
+    e.stopPropagation()
 
-    if (!ClickFora && !ClickBotao) {
-        menu.classList.remove("open")
-    } 
-})
+    const isOpen = navList.classList.contains("active")
 
-// Fecha ao apertar Espaço ou Esc
+    if(isOpen){
+        closeMenu()
+    }else{
+        openMenu()
+    }
+}) 
+
+// fechar com o ESC
 
 document.addEventListener("keydown", (e) =>{
-    if (e.key === "Escape" || e.key === "Space"){
-        menu.classList.remove("open")
-    } 
+    if(e.key === "Escape"){
+        closeMenu()
+    }
 })
 
-// Fecha ao clicar em um link do menu
+// Clicar fora
+
+document.addEventListener("click", (e) =>{
+    const ClicknoMenu = navList.contains(e.target)
+    const ClicknoBotao = menuToggle.contains(e.target)
+
+    if(!ClicknoBotao && !ClicknoMenu){
+        closeMenu()
+    }
+})
+
+// clique nos links
+
 document.querySelectorAll("a").forEach(link =>{
     link.addEventListener("click", () =>{
-        menu.classList.remove("open")
+        closeMenu()
     })
 })
-

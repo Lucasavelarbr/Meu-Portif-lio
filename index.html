@@ -28,49 +28,32 @@
 </head>
 
 <body>
-
-    <div class="overlay"></div>
-
-    <header>
-        <button class=" menu-toggle" id="toggle-menu" aria-label="Abrir menu lateral">Menu</button>
-    </header>
-
-    <!-- Sidebar mobile-->
-    <nav class="menu-lateral" id="menu-lateral">
-        <ul>
-            <li>
-                <a href="#" class="menu-link" aria-label="">
-                    <i class="bi bi-house-fill"></i>
-                    <span>Início</span>
-                </a>
-            </li>
-            <li>
-                <a href="#sobre-mim" class="menu-link" aria-label="Abrir menu">
-                    <i class="bi bi-person-bounding-box"></i>
-                    <span>Sobre mim</span>
-                </a>
-            </li>
-            <li>
-                <a href="#tecnologias" class="menu-link" aria-label="Abrir menu">
-                    <i class="bi bi-cpu"></i>
-                    <span>Tecnologias</span>
-                </a>
-            </li>
-            <li>
-                <a href="#projetos" class="menu-link">
-                    <i class="bi bi-cast"></i>
-                    <span>Projetos</span>
-                </a>
-            </li>
-        </ul>
+        <div id="overlay" class="overlay"></div>
+<header>
+    <nav class="navbar" aria-label="Nevagação principal">
+       
+         <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-list"
+            aria-label="Abrir menu de navegação">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
 
         <div class="redes-sociais">
             <a href="https://www.linkedin.com/in/lucas-avelar-pcd-42068435a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank"><i class="bi bi-linkedin"></i></a>
+                    target="_blank"><i class="bi bi-linkedin"></i></a>
             <a href="https://wa.me/+5511965765805" target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
 
+        <ul class="nav-list" id="nav-list">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Acessibilidade</a></li>
+            <li><a href="#">Curiosidades</a></li>
+            <li><a href="#">Tecnologias</a></li>
+            <li><a href="#">Projetos</a></li>
+            </ul>
     </nav>
+</header>
 
     <!-- Menu Desktop -->
 
@@ -95,7 +78,7 @@
 
     <main>
         <section class="perfil">
-            <img src="./IMG/perfil.webp" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
+            <img src="./IMG/perfil.png" alt="Lucas Brasil, Desenvolvedor, pessoa branca, careca, com barba fechada, foto com fundo transparente e sorrindo 
                 e olhando para a câmera de forma descontraída" loading="lazy">
             <div class="conteudo-perfil">
                 <div class="texto">
@@ -132,34 +115,46 @@
             </p>
         </section>
 
+        <!-- ACESSIBILIDADE -->
+        <section class="skills" aria-labelledby="skills-título">
+           
+            <h2 id="skills-title">Habilidades técnicas</h2>
+
+            <div class="skills-card" role="region" aria-labelledby="acessibilidade-título">
+                
+                <h3 id="accessibility-title">Acessibilidade</h3>        
+
+                <ul class="check-list">
+                    <li>WCAG 2.2 nível AA e AAA;</li>
+                    <li>Uso de ARIA para acessibilidade</li>
+                    <li>Conhecimento no uso de leitores de tela</li>
+                    <li>Conhecimento avançado em gestão de foco e feedback visual</li>
+                    <li>Foco em Deficiências permanentes e temporárias</li>
+                </ul>
+            </div>
+
+            <div class="skills-card" role="region" aria-labelledby="pilares-Acessibilidade-título">
+                
+                <h3 id="accessibility-title">Pilares da Acessibilidade</h3>        
+
+                <ul class="check-list2">
+                    <li>Perceptível: alternativas em texto para imagens e conteúdos não textuais</li>
+                    <li>Operável: ausência de bloqueios por teclado (sem keyboard trap)</li>
+                    <li>Compreensível: consistência de navegação e previsibilidade de interface</li>
+                    <li>Robusto: compatibilidade com diferentes navegadores e tecnologias assistivas</li>
+                    <li>Mensagens de erro acessíveis e orientação clara para o usuário</li>
+                    <li>Tempo suficiente para leitura e interação (sem limitações inesperadas)</li>
+                </ul>
+            </div>
+            
+           
+        </section>
+
         <section class="tecnologias-container" id="tecnologias">
 
             <h2>Tecnologias</h2>
 
-            <div class="tecnologias-grid" id="tecnologia-imagens">
-                <figure>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                        alt="Logotipo da tecnologia HTML5">
-                    <figcaption>HTML5</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                        alt="Logotipo da tecnologia CSS3">
-                    <figcaption>CSS3</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                        alt="Logotipo da tecnologia JavaScript">
-                    <figcaption>JavaScript</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="IMG/react.png" alt="Logotipo da tecnologia React">
-                    <figcaption>React</figcaption>
-                </figure>
-            </div>
+            
         </section>
 
 
