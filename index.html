@@ -47,10 +47,11 @@
 
         <ul class="nav-list" id="nav-list">
             <li><a href="#">Início</a></li>
-            <li><a href="#">Acessibilidade</a></li>
-            <li><a href="#">Curiosidades</a></li>
-            <li><a href="#">Tecnologias</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#skills-title">Habilidades</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#youtube">Canal Youtube</a></li>
+            <li><a href="#projetos">Projetos</a></li>
             </ul>
     </nav>
 </header>
@@ -83,7 +84,9 @@
             <div class="conteudo-perfil">
                 <div class="texto">
                     <h1>Lucas Avelar Brasil</h1>
-                    <p>Desenvolvedor Front-end com foco em <span>Acessibilidade Digital (WCAG)</span></p>
+                    <p>Desenvolvedor Front-end com foco em <span> <a href="https://www.w3.org/TR/WCAG22/">
+
+                    Acessibilidade Digital (WCAG)</a></span></p>
                 </div>
 
                 <div class="contato">
@@ -118,11 +121,11 @@
         <!-- ACESSIBILIDADE -->
         <section class="skills" aria-labelledby="skills-título">
            
-            <h2 id="skills-title">Habilidades técnicas</h2>
+            <h3 id="skills-title">Habilidades técnicas</h3>
 
             <div class="skills-card" role="region" aria-labelledby="acessibilidade-título">
                 
-                <h3 id="accessibility-title">Acessibilidade</h3>        
+                <h4 id="accessibility-title">Acessibilidade</h4>        
 
                 <ul class="check-list">
                     <li>WCAG 2.2 nível AA e AAA;</li>
@@ -135,9 +138,9 @@
 
             <div class="skills-card" role="region" aria-labelledby="pilares-Acessibilidade-título">
                 
-                <h3 id="accessibility-title">Pilares da Acessibilidade</h3>        
+                <h4 id="accessibility-title">Pilares da Acessibilidade</h4>        
 
-                <ul class="check-list2">
+                <ul class="check-list">
                     <li>Perceptível: alternativas em texto para imagens e conteúdos não textuais</li>
                     <li>Operável: ausência de bloqueios por teclado (sem keyboard trap)</li>
                     <li>Compreensível: consistência de navegação e previsibilidade de interface</li>
@@ -147,15 +150,147 @@
                 </ul>
             </div>
             
-           
         </section>
 
-        <section class="tecnologias-container" id="tecnologias">
+        <!-- TECNOLOGIAS -->
 
-            <h2>Tecnologias</h2>
+   <section class="tecnologias-container" id="tecnologias" aria-labelledby="tecnologias-title">
 
+    <div class="section-header">
+        <h2 id="tecnologias-title">Tecnologias e Competências</h2>
+        <p>
+            Utilizo tecnologias modernas com foco em acessibilidade,
+            performance e experiência do usuário.
+        </p>
+    </div>    
+
+    <!-- HTML -->
+
+    <article class="card">
+        <div class="card-content">
+            <h3>HTML5</h3>
+            <p class="card-description">
+                Estrutura semântica para interfaces acessíveis.
+            </p>
+
+            <ul class="card-list">
+                <li>Semântica</li>
+                <li>Acessibilidade</li>
+                <li>SEO</li>
+                <li>Elementos ARIA</li>
+                <li>Descrição e Autodescrição correta em Imagens</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- CSS -->
+
+    <article class="card">
+        <div class="card-content">
+            <h3>CSS3</h3>
+            <p class="card-description">
+                Estilização moderna com foco em inclusão e responsividade.
+            </p>
+
+            <ul class="card-list">
+                <li>Responsividade</li>
+                <li>Contraste de cores</li>
+                <li>Animações</li>
+                <li>Focus Visble</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- JavaScript -->
+
+    <article class="card">
+        <div class="card-content">
+            <h3>JavaScript</h3>
+            <p class="card-description">
+                Interações acessíveis e gerenciamento de foco.
+            </p>
+
+            <ul class="card-list">
+                <li>Interações acessíveis</li>
+                <li>Controle de foco</li>
+                <li>Manipulação do DOM</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- React -->
+
+    <article class="card">
+        <div class="card-content">
+            <h3>React</h3>
+            <p class="card-description">
+                Componentização e interfaces escaláveis e acessíveis.
+            </p>
+
+            <ul class="card-list">
+                <li>Componentes</li>
+                <li>Props</li>
+                <li>Hooks</li>
+            </ul>
+        </div>
+    </article>
+
+    <!-- WCAG -->
+    <article class="card wcag-card">
+        <div class="card-content">
+            <h3>WCAG 2.2</h3>
+            <p class="card-description">
+                Diretrizes internacionais para criação de experiências digitais acessíveis.
+            </p>
+
+            <ul class="card-list">
+
+                <li>Navegação por teclado</li>
+                <li>Leitores de tela</li>
+                <li>Contraste AA e AAA</li>
+                <li>Formulários acessíveis</li>
+            </ul>
+        </div>
+    </article>
+</section>
+
+<!-- YOUTUBE -->
+
+<section class="youtube-section" id="youtube" aria-labelledby="youtube-tittle">
+    <div class="youtube-content">
+        <div class="youtube-text">
+            <h2>Produzo conteúdo sobre
+                <span>Acessibilidade Digital</span>
+                no Youtube!
+            </h2>
+
+            <p>
+                 No canal <strong>Dev sem Barreiras</strong> compartilho
+                conteúdos sobre WCAG, ARIA, HTML semântico,
+                navegação por teclado, contraste de cores,
+                leitores de tela e boas práticas de desenvolvimento
+                acessível.
+            </p>
+
+        </div>
+
+        <figure class="youtube-image">
+            <img src="./IMG/youtube.png" 
+            alt="Prévia do canal Dev sem Barreiras mostrando a identidade visual do canal sobre acessibilidade digital.">
+        </figure>
+
+         <a href="https://youtube.com/@dev.sem.barreiras"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="youtube-button"
+                aria-label="Abrir canal Dev sem Barreiras no YouTube">
+
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
             
-        </section>
+                <span>Visitar canal</span>
+            </a>
+    </div>
+</section>
 
 
         <section class="projetos" id="projetos">
@@ -187,23 +322,23 @@
                 </figure>
 
                 <figure class="projeto">
-                    <img src="IMG/avelar-turismo.png"
+                    <img src="IMG/Charllene.png"
                         alt="Versão mobile do site Avelar Turismo, criada para o meu portfólio.">
-                    <h3>Lucas Avelar - Turismo</h3>
+                    <h3>Charllene Marcondes – Psicopedagogia & Terapia ABA</h3>
                     <p>
-                        Projeto acadêmico desenvolvido com HTML, CSS e JavaScript para avaliação semestral, aplicando
-                        princípios de design responsivo, acessibilidade e boas práticas de desenvolvimento front-end.
+                        Este site foi pensado para transmitir confiança, empatia e profissionalismo, utilizando uma linguagem visual leve e uma estrutura semântica que prioriza
+                        boa experiência do usuário (UX), Acessibilidade (WCAG), Responsividade, Performance e Clareza na comunicação com famílias e responsáveis
                     </p>
                     <figcaption>
-                        <a href="https://lucasavelarbr.github.io/Turismo-Avelar/" class="btn-projeto"
-                            aria-label="Versão mobile do site Avelar Turismo, criada para o meu portfólio."
+                        <a href="https://lucasavelarbr.github.io/Charllene-Marcondes/" class="btn-projeto"
+                            aria-label="Versão mobile e desktop do site da Charllene."
                             target="_blank">
                             <i class="bi bi-sign-turn-right"></i>
                             <span>Projeto</span>
                         </a>
 
-                        <a href="https://github.com/Lucasavelarbr/Turismo-Avelar" class="btn-repositorio"
-                            aria-label="Ver repositório de Lucas Avelar Turismo" target="_blank">
+                        <a href="https://github.com/Lucasavelarbr/Charllene-Marcondes" class="btn-repositorio"
+                            aria-label="Ver repositório no Github do projeto de Charllene Marcondes" target="_blank">
                             <i class="bi bi-git"></i>
                             <span> Repositorio </span>
                         </a>

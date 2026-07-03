@@ -1,9 +1,20 @@
-@media screen and (max-width: 780px){
-    .redes-sociais{
+:root {
+    --cor-background: #080c16;
+    --color: #E2E8F0;
+    --cor-borda: #25B3E8;
+    --cor-cards: #0e1721e0;
+    --cor-superficie: #1e293b;
+    --tamanho-fonte-texto: 1rem;
+    --tamanho-fonte-título: 1.5rem;
+}
+
+
+@media screen and (max-width: 780px) {
+    .redes-sociais {
         margin-top: 50px;
     }
 
-    .projetos-container{
+    .projetos-container {
         display: grid;
         grid-template-columns: 1fr;
         width: 70%;
@@ -13,123 +24,127 @@
         margin: 0 auto;
     }
 
-    .menu-lateral{
+    .menu-lateral {
         width: 50%;
         height: 100vh;
     }
 
 }
 
-@media  screen and (max-width: 780px){
-    .menu-desktop{
+@media screen and (max-width: 780px) {
+    .menu-desktop {
         display: none;
     }
 }
 
 
-@media  screen and (min-width: 780px) {
-    .menu-toggle{
+@media screen and (min-width: 780px) {
+    .menu-toggle {
         display: none;
     }
 
-    .menu-lateral{
+    .menu-lateral {
         display: none;
     }
 
-    .logo-mobile img{
+    .logo-mobile img {
+        display: none;
+    }
+
+    .navbar {
         display: none;
     }
 
     /* Navbar - Desktop */
-    .menu-desktop{
+    .menu-desktop {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 1rem;
         position: sticky;
-        top: 0;
+        top: -1px;
         z-index: 2;
-        background-color: #0d0d0df1;
+        background-color: var(--cor-background);
         width: 100%;
         height: 60px;
     }
 
-    .logo-desktop{
+    .logo-desktop {
         height: 6rem;
         margin-top: 5px;
     }
 
-    .menu-desktop ul{
+    .menu-desktop ul {
         list-style-type: none;
         display: flex;
         gap: 1rem;
         margin: 0 5%;
     }
 
-    .menu-desktop ul li a{
+    .menu-desktop ul li a {
         text-decoration: none;
-        color: #fff;
+        color: var(--color);
         font-size: 1rem;
         font-weight: bold;
     }
 
-    .menu-desktop ul li a:focus-visible{
-        outline: 3px solid #062B6F; 
+    .menu-desktop ul li a:focus-visible {
+        outline: 3px solid #062B6F;
         outline-offset: 10px;
         border-radius: 4px;
     }
 
-    .menu-desktop ul li a:focus{
-    outline: 3px solid #062B6F; 
-    outline-offset: 10px;
-    border-radius: 4px;
+    .menu-desktop ul li a:focus {
+        outline: 3px solid #062B6F;
+        outline-offset: 10px;
+        border-radius: 4px;
     }
 
     /* Icones de Linkedin e Whatsapp - Desktop */
-    .redes-sociais-desktop{
+    .redes-sociais-desktop {
         gap: 30px;
         display: flex;
         margin-right: 5%;
     }
 
-    .redes-sociais-desktop i{
-        color: #fff;
+    .redes-sociais-desktop i {
+        color: var(--cor-borda);
         font-size: 1.3rem;
     }
 
-    .redes-sociais-desktop a:focus-visible{
-        outline: 3px solid #062B6F; 
+    .redes-sociais-desktop a:focus-visible {
+        outline: 3px solid #062B6F;
         outline-offset: 10px;
         border-radius: 4px;
     }
 
-    .redes-sociais-desktop a:focus{
-        outline: 3px solid #062B6F; 
+    .redes-sociais-desktop a:focus {
+        outline: 3px solid #062B6F;
         outline-offset: 10px;
         border-radius: 4px;
     }
 
-    .perfil{
+    .perfil {
         display: flex;
         align-items: center;
         gap: 2.5rem;
     }
 
-    .conteudo-perfil{
+    .conteudo-perfil {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         align-items: flex-start;
     }
 
-    .perfil img{
+    .perfil img {
         flex: 0 0 auto;
         margin: 100px 0 100px 100px;
         height: auto;
         width: 300px;
     }
 
-    .perfil h1{
+    .perfil h1 {
         font-size: 3rem;
         text-align: left;
         margin-left: 50px;
@@ -143,21 +158,321 @@
         margin-left: 50px;
     }
 
-    #sobre-mim, #tecnologias, #projetos{
-    scroll-margin-top: 7rem;
+    #sobre-mim,
+    #tecnologias,
+    #projetos {
+        scroll-margin-top: 3rem;
     }
 
-    .sobre-mim{
+    .sobre-mim h3 {
+        font-size: 3rem;
+
+    }
+
+    .sobre-mim {
         max-width: 70%;
+        font-size: 1.5rem;
     }
 
-    /* Tecnologias */
-    #tecnologia-imagens{
+
+    /* SKILS */
+
+    .skills-card {
+        width: 80%;
+        background-color: var(--cor-cards);
+        box-shadow: 0 0 13px -9px var(--color);
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .skills {
         display: flex;
-        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
     }
 
-    .projetos-container{
+    .skills h3 {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color);
+    }
+
+    .skills h3::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 3px;
+        background-color: var(--cor-borda);
+        margin: 12px auto 0;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+    }
+
+    #accessibility-title {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: var(--color);
+    }
+
+    .check-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .check-list li {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--color);
+    }
+
+    .check-list li:first-child {
+        margin-top: 5 0px;
+    }
+
+    .check-list li::before {
+        content: '✔';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        color: var(--cor-borda);
+        font-weight: bold;
+    }
+
+    .check-list2 {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .check-list2 li {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 93%;
+        color: var(--color);
+    }
+
+    .check-list2 li:first-child {
+        margin-top: 50px;
+    }
+
+    .check-list2 li::before {
+        content: '✔';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        color: var(--cor-borda);
+        font-weight: bold;
+    }
+
+    /* ==========================================================
+   TECNOLOGIAS
+========================================================== */
+
+    .tecnologias-container {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+        grid-column: 1/-1;
+    }
+
+    .section-header span {
+        display: block;
+        font-size: .9rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--color);
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 3rem;
+        color: #FFF;
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+    }
+
+    .section-header h2::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 3px;
+        background-color: var(--cor-borda);
+        margin: 12px auto 0;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+    }
+
+    .section-header p {
+
+        color: #B8C1D1;
+        line-height: 1.7;
+        max-width: 100%;
+        margin: auto;
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+
+    .card {
+        background: #111827;
+        border-radius: 22px;
+        padding: 30px;
+        width: 100%;
+        margin: 30px auto;
+        min-height: 380px;
+    }
+
+
+    .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+    }
+
+    .card h3 {
+        color: #FFF;
+        font-size: 3rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+
+    .card-description {
+        color: #CBD5E1;
+        line-height: 1.6;
+        font-size: 1.3rem;
+        margin: 20px auto;
+        text-align: left;
+    }
+
+    .card-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .card-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        color: #E2E8F0;
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
+
+    /* Bolinha azul */
+
+    .card-list li::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #2E86FF;
+        margin-top: 8px;
+        flex-shrink: 0;
+    }
+
+    .card:focus-within {
+        outline: 3px solid #2E86FF;
+        outline-offset: 5px;
+
+    }
+
+    /* Youtube */
+
+    .youtube-section {
+        margin: auto;
+        padding: 90px, 20px;
+    }
+
+    .youtube-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .youtube-text h2 {
+        color: var(--color);
+        font-size: 3rem;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 25px auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .youtube-text h2 span {
+        color: var(--cor-borda);
+    }
+
+    .youtube-text p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 80%;
+        color: var(--color);
+    }
+
+    .youtube-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+        color: var(--cor-borda);
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: 35%;
+        margin-bottom: 100px;
+    }
+
+    .youtube-button span {
+        text-decoration: underline;
+    }
+
+    .youtube-button i {
+        font-size: 3rem;
+    }
+
+    .youtube-image img {
+        width: 70%;
+        display: block;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .35);
+        margin: 50px auto -20px auto;
+    }
+
+    .projetos-container {
         display: grid;
         grid-template-columns: 1fr;
         width: 90%;
@@ -168,37 +483,571 @@
         min-height: 500px;
     }
 
-    .copy{
+    .projetos h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        color: var(--color);
+        margin-top: 120px;
+    }
+
+    .projetos h2::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 2px;
+        background-color: var(--cor-borda);
+        margin: 12px auto 0;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+    }
+
+    .projetos-container h3 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .projeto>p {
+        text-align: center;
+        font-size: 1.8rem;
+        flex-grow: 1;
+        max-width: 100%;
+        display: block;
+        margin: 30px auto 10px;
+        color: var(--color);
+    }
+
+    .btn-projeto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor-borda);
+        color: var(--cor-background);
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .btn-projeto i {
+        margin-right: 15px;
+        font-size: 2rem;
+    }
+
+    .btn-repositorio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 2rem;
+        border: 2px solid var(--cor-borda);
+        color: var(--cor-borda);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .btn-repositorio i {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+
+
+    .copy {
         font-size: 1.2rem;
     }
- }
+}
 
- @media  screen and (min-width: 1000px) {
-    
+@media screen and (min-width: 1200px) {
 
+    .menu-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        position: sticky;
+        top: -5PX;
+        z-index: 2;
+        background-color: var(--cor-background);
+        width: 100%;
+        height: 80px;
+    }
 
-    .contato{
+    .logo-desktop {
+        height: 8rem;
+        margin-top: 5px;
+    }
+
+    .menu-desktop ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        margin: 0 5%;
+    }
+
+    .menu-desktop ul li a {
+        text-decoration: none;
+        color: var(--color);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .menu-desktop ul li a:focus-visible {
+        outline: 3px solid #062B6F;
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    .menu-desktop ul li a:focus {
+        outline: 3px solid #062B6F;
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    /* Icones de Linkedin e Whatsapp - Desktop */
+    .redes-sociais-desktop {
+        gap: 30px;
+        display: flex;
+        margin-right: 5%;
+    }
+
+    .redes-sociais-desktop i {
+        color: var(--cor-borda);
+        font-size: 2.3rem;
+    }
+
+    .redes-sociais-desktop a:focus-visible {
+        outline: 3px solid #062B6F;
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    .redes-sociais-desktop a:focus {
+        outline: 3px solid #062B6F;
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+    /* PERFIL */
+
+    .perfil img {
+        height: auto;
+        width: 30%;
+        object-fit: cover;
+        object-position: center;
+        background-size: cover;
+        display: flex;
+        margin: 100px auto 0 100px;
+        border-radius: 20px;
+        border: 2px solid #25B3E8;
+    }
+
+    .contato {
         display: flex;
         gap: 1rem;
-        width: max-content; 
-        margin-left: 45px;     
+        width: max-content;
         justify-content: flex-start;
-        
-    }
-    
-    .projetos-container{
-        display: flex;
-        gap: 2.5rem;
-        
+
     }
 
-    .projeto{
+    .perfil h1 {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 4rem;
+        color: var(--cor-borda);
+    }
+
+    .perfil p {
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 20px auto;
+        color: var(--color);
+        max-width: 80%;
+    }
+
+    .perfil span a {
+        font-weight: bold;
+        color: var(--cor-borda);
+        text-decoration: underline;
+    }
+
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+ 
+    .btn-base {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-borda);
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .btn-base i {
+        margin-right: 5px;
+        font-size: 2rem;
+    }
+
+    .btn-download:focus-visible {
+        outline: 3px solid var(--cor-borda);
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+
+    .btn-download {
+        background-color: var(--cor-borda);
+        color: var(--cor-background);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .github {
+        background-color: transparent;
+        color: var(--cor-borda);
+        border: 2px solid var(--cor-borda);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .sobre-mim {
+        font-size: 2rem;
+    }
+
+    /* ACESSIBILIDADE - SKILLS */
+
+    .skills-card {
+        width: 70%;
+        background-color: var(--cor-cards);
+        box-shadow: 0 0 13px -9px var(--color);
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .skills h3 {
+        margin-bottom: 30px;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color);
+    }
+
+    .skills h3::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 4px;
+        background-color: var(--cor-borda);
+        margin: 12px auto 0;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+    }
+
+    #accessibility-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        color: var(--color);
+    }
+
+    .check-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .check-list li {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--color);
+    }
+
+    .check-list li:first-child {
+        margin-top: 50px;
+    }
+
+    .check-list li::before {
+        content: '✔';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        color: var(--cor-borda);
+        font-weight: bold;
+    }
+
+    .check-list2 {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .check-list2 li {
+        position: relative;
+        padding-left: 60px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 93%;
+        color: var(--color);
+    }
+
+    .check-list2 li:first-child {
+        margin-top: 50px;
+    }
+
+    .check-list2 li::before {
+        content: '✔';
+        position: absolute;
+        left: 20px;
+        top: 0;
+        color: var(--cor-borda);
+        font-weight: bold;
+    }
+
+    /* TECNOLOGIAS */
+
+    .tecnologias-container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+        grid-column: 1/-1;
+    }
+
+    .section-header span {
+        display: block;
+        font-size: .9rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--color);
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .section-header h2 {
+        font-size: 3rem;
+        color: #FFF;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+    }
+
+    .section-header h2::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 3px;
+        background-color: var(--cor-borda);
+        margin: 12px auto 0;
+        border-radius: 2px;
+        margin-bottom: 2rem;
+    }
+
+    .section-header p {
+
+        color: #B8C1D1;
+        line-height: 1.7;
+        max-width: 80%;
+        margin: auto;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+
+    .card {
+        background: #111827;
+        border-radius: 22px;
+        padding: 30px;
+        width: 100%;
+        margin: 30px auto;
+        min-height: 380px;
+    }
+
+
+    .card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+
+    }
+
+    .card h3 {
+        color: #FFF;
+        font-size: 3rem;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+
+    .card-description {
+        color: #CBD5E1;
+        line-height: 1.6;
+        font-size: 1.5rem;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    .card-content{
+        width: fit-content;
+    }
+
+    .card-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 28px;
+        display: grid;
+        flex-direction: column;
+        gap: 14px;
+        align-items: flex-start;
+    }
+
+    .card-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        color: #E2E8F0;
+        line-height: 1.5;
+        font-size: 1.3rem;
+    }
+
+    /* Bolinha azul */
+
+    .card-list li::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #2E86FF;
+        margin-top: 8px;
+        flex-shrink: 0;
+    }
+
+    .card:focus-within {
+        outline: 3px solid #2E86FF;
+        outline-offset: 5px;
+
+    }
+
+    .wcag-card{
+     grid-column:1 / -1;
+}
+
+
+   /* YOUTUBE */
+
+    .youtube-section {
+        margin: auto;
+        padding: 90px, 20px;
+        max-width: 90%;
+    }
+
+    .youtube-content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .youtube-text h2 {
+        color: var(--color);
+        font-size: 4rem;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 25px auto;
+        text-align: center;
+    }
+
+    .youtube-text h2 span {
+        color: var(--cor-borda);
+    }
+
+    .youtube-text p {
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 10px auto;
+        max-width: 80%;
+        color: var(--color);
+    }
+
+    .youtube-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+        color: var(--cor-borda);
+        text-decoration: none;
+        font-size: 1.8rem;
+        font-weight: 800;
+        margin-left: 39%;
+        margin-bottom: 100px;
+    }
+
+    .youtube-button span {
+        text-decoration: underline;
+    }
+
+    .youtube-button i {
+        font-size: 3rem;
+    }
+
+    .youtube-image img {
+        width: 70%;
+        display: block;
+        border-radius: 18px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .35);
+        margin: 50px auto -20px auto;
+    }
+
+   /* PROJETOS */
+
+    .projetos-container {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+
+    }
+
+    .projeto {
         display: flex;
         flex-direction: column;
     }
 
-    .projeto > p{
+    .projeto>p {
         text-align: center;
     }
 
-}   
+}

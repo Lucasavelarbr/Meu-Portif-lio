@@ -22,6 +22,16 @@ html{
     scroll-behavior: smooth;
 }
 
+#sobre-mim,
+#skills-tittle,
+#tecnologias,
+#youtube,
+#projetos{
+
+    scroll-margin-top: 90px;
+
+}
+
 body{
     background:var(--cor-background) ;
     font-family: "Inter", sans-serif;
@@ -175,7 +185,7 @@ outline: 3px solid var(--cor-borda);
     color: var(--color);
 }
 
-.perfil span{
+.perfil span a{
     font-weight: bold;
     color:var(--color);
 }
@@ -285,7 +295,7 @@ outline: 3px solid var(--cor-borda);
     margin-top: 100px;
 }
 
-.skills h2{
+.skills h3{
     margin-bottom: 30px;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -293,7 +303,7 @@ outline: 3px solid var(--cor-borda);
     color: var(--color);
 }
 
-.skills h2::after{
+.skills h3::after{
     content: '';
     display: block;
     width: 60px;
@@ -309,6 +319,7 @@ outline: 3px solid var(--cor-borda);
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
+    margin-top: 30px;
     color: var(--color);
 }
 
@@ -367,17 +378,36 @@ outline: 3px solid var(--cor-borda);
     font-weight: bold;
 }
 
-/* Tecnologias */
+/* ==========================================================
+   TECNOLOGIAS
+========================================================== */
 
-.tecnologias-container h2{
-    text-align: center;
-    color: var(--color);
-    text-transform: uppercase;
-    font-size: 2rem;
-    margin-top: 100px;
+.tecnologias-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 1.5rem;
 }
 
-.tecnologias-container h2::after{
+.section-header{
+    text-align: center;
+    margin: 1rem auto;
+    grid-column:1 / -1;
+}
+
+.section-header h2{
+
+    font-size: 2rem;
+    color:#FFF;
+    line-height:1.2;
+    margin-bottom:20px;
+    text-transform: uppercase;
+
+}
+
+.section-header h2::after{
     content: '';
     display: block;
     width: 60px;
@@ -386,6 +416,146 @@ outline: 3px solid var(--cor-borda);
     margin: 12px  auto 0;
     border-radius: 2px;
     margin-bottom: 2rem;
+}
+
+.section-header p{
+    color:#B8C1D1;
+    line-height:1.7;
+    max-width:330px;
+    margin:auto;
+    font-size:1.2rem;
+    font-weight: 500;
+}
+
+.card{
+    background:#111827;
+    border-radius: 22px;
+    padding: 2rem;
+}
+
+.card-header{
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card h3{
+    color:#FFF;
+    font-size: 2rem;
+    font-weight:700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.card-description{
+    color:#CBD5E1;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.card-list{
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 28px;
+    gap: .9rem;
+}
+
+.card-list li{
+    display:flex;
+    align-items: flex-start;
+    gap: .75rem;
+    color: #E2E8F0;
+    line-height: 1.5;
+}
+
+/* Bolinha azul */
+
+.card-list li::before{
+    content:"";
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background: #2E86FF;
+    margin-top: 8px;
+    flex-shrink: 0;
+}
+
+.card:focus-within{
+    outline:3px solid #2E86FF;
+    outline-offset:5px;
+}
+
+.wcag-card{
+     grid-column:1 / -1;
+}
+
+/* Youtube */
+
+.youtube-section{
+    margin: auto;
+    padding: 90px, 20px;
+}
+
+.youtube-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.youtube-text h2{
+    color: var(--color);
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 25px auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+.youtube-text h2 span{
+    color: var(--cor-borda);
+}
+
+.youtube-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 80%;
+    color: var(--color);
+}
+
+.youtube-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    color: var(--cor-borda);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: 105px;
+}
+
+.youtube-button span{
+    text-decoration:underline;
+}
+
+.youtube-button i{
+    font-size: 2rem;
+}
+
+.youtube-image img{
+    width:90%;
+    display:block;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    margin: 0 auto;
+
 }
 
 /* Projetos */
@@ -428,13 +598,10 @@ outline: 3px solid var(--cor-borda);
 }
 
 .projeto img{
-    aspect-ratio: 16 / 9;
-    width: 80%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px black;
 }
 
 .projeto h3{
